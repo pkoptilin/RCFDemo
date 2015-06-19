@@ -6,33 +6,8 @@ import com.selectica.rcfdev.stubs.DirectoryInfoComponent;
 import com.selectica.rcfdev.stubs.RRepDetails;
 import com.selectica.rcfscripts.AbstractDataWriteScript;
 
-/**
- * Created by vshilkin on 26/12/2014.
- */
 public class OnCreateTrigger extends AbstractDataWriteScript<Boolean> {
-    /*
-            <![CDATA[
-            if (typeof relatedBundle != 'undefined') {
-                var dirStatus = relatedBundle.getInfoValueObject("dirStatus").toString();
-                if (dirStatus.equals("Active")) {
-                    var a1 = relatedBundle.getInfoValueObject("dirAdr1");
-                    var a2 = relatedBundle.getInfoValueObject("dirAdr2");
-                    var c = relatedBundle.getInfoValueObject("dirCity");
-                    var s = relatedBundle.getValueFromInfo("dirState").getDisplayValue();
-                    var z = relatedBundle.getInfoValueObject("dirZip");
-                    var ct = relatedBundle.getValueFromInfo("dirCountry").getDisplayValue();
-                    thisComponent.setValue("/cpAdr1", a1, false);
-                    thisComponent.setValue("/cpAdr2", a2, false);
-                    thisComponent.setValue("/cpCity", c, false);
-                    thisComponent.setValue("/cpState", s, false);
-                    thisComponent.setValue("/cpCtry", ct, false);
-                    thisComponent.setValue("/cpZip", z, false);
-                    thisComponent.setValue("/cpName", relatedBundle.getValue("trackingNumber"), false);
-                }
-            }
-            thisComponent.setValue("/contractStatus", "Active", false);
-            ]]>
-     */
+
     @Override
     public Boolean process() throws Exception {
         RRepDetails details = getHelper().getCurrentComponentStub();
@@ -49,6 +24,7 @@ public class OnCreateTrigger extends AbstractDataWriteScript<Boolean> {
                 details.setCpName(String.valueOf(directoryInfo.getTrackingNumber()));
             }
         }
+        details.setAdditionalInfo("Wrong contract");
         details.setContractStatus(RepositoryStatus.ACTIVE.getStatus());
         return true;
     }
