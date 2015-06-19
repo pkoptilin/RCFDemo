@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportTemplate>
+  <ReportTemplateName active="false">Real Estate Lease - Minimum Payments Next Year</ReportTemplateName>
+  <ReportTemplateParameters>
+    <MetaInfo>
+      <GroupByColumn ascending="true">RealEstateLease/ReqPaymentGenerator/ReqPaymentStream/paymentCostCenter</GroupByColumn>
+      <ReportFilterType>AND</ReportFilterType>
+      <AgOpFilterType>AND</AgOpFilterType>
+      <ReportConditionType>Normal</ReportConditionType>
+    </MetaInfo>
+    <IncSummaryCalcs>true</IncSummaryCalcs>
+    <IncSummaryAvgs>false</IncSummaryAvgs>
+    <IncChart>true</IncChart>
+    <IncSummaryCount>false</IncSummaryCount>
+    <IncFilterCriteria>true</IncFilterCriteria>
+    <IncLineItemDetails>true</IncLineItemDetails>
+    <ResultFormat>html</ResultFormat>
+    <ReportType>0</ReportType>
+    <SelectedColumn>
+      <Label>Pay date</Label>
+      <Path>RealEstateLease/ReqPaymentGenerator/ReqPaymentStream/paymentDate</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Payment amount</Label>
+      <Path>RealEstateLease/ReqPaymentGenerator/ReqPaymentStream/paymentAmount</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Cost Center</Label>
+      <Path>RealEstateLease/ReqPaymentGenerator/ReqPaymentStream/paymentCostCenter</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Budget Number</Label>
+      <Path>RealEstateLease/ReqPaymentGenerator/ReqPaymentStream/paymentBudgetNumber</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Landlord</Label>
+      <Path>RealEstateLease/ReqRealEstateLeaseInfo/landlord</Path>
+    </SelectedColumn>
+    <MatchField>
+      <Path>RealEstateLease/ReqPaymentGenerator/ReqPaymentStream/paymentDate</Path>
+      <RelOp>OperatorDef:/isNextYear/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <MatchField>
+      <Path>BundleDef:/bundleType</Path>
+      <RelOp>OperatorDef:/contains/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value>Real Estate</Value>
+    </MatchField>
+    <MatchField>
+      <Path></Path>
+      <RelOp></RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <ActionFormulas></ActionFormulas>
+    <EmailActions></EmailActions>
+    <ChartingInfo>
+      <ChartType>PieChart</ChartType>
+      <TopNResults>0</TopNResults>
+      <TopOrBottom>Top</TopOrBottom>
+      <X_Axis>RealEstateLease/ReqPaymentGenerator/ReqPaymentStream/paymentCostCenter</X_Axis>
+      <Y1_Axis>Sum</Y1_Axis>
+      <Y2_Axis>Count</Y2_Axis>
+      <Legend>true</Legend>
+      <ToolTips>true</ToolTips>
+      <displayRanges>true</displayRanges>
+      <columnToChart>RealEstateLease/ReqPaymentGenerator/ReqPaymentStream/paymentAmount</columnToChart>
+    </ChartingInfo>
+  </ReportTemplateParameters>
+</ReportTemplate>
+

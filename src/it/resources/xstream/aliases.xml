@@ -1,0 +1,12 @@
+<list>
+  <string>com.selectica.qa.automation.dto.SuiteTO</string>
+  <string>com.selectica.qa.automation.dto.ContractTO</string>
+  <string>com.selectica.qa.automation.dto.StageTO</string>
+  <string>com.selectica.qa.automation.dto.EventTO</string>
+  <string>com.selectica.System.stubs.bo.ClauseLibraryBO</string>
+  <string>com.selectica.System.stubs.bo.DynamicInclusionBO</string>
+  <string>com.selectica.System.stubs.bo.EmailAccountTemplateBO</string>
+  <string>com.selectica.System.stubs.bo.EmailTemplateBO</string>
+  <string>com.selectica.System.stubs.bo.Preferences</string>
+  <string>com.selectica.System.stubs.bo.TemplateMgmtBO</string>
+</list>

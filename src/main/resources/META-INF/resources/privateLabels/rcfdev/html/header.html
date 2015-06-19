@@ -1,0 +1,14 @@
+<!-- begin /privateLabels/rcfdev/html/header.html-->
+<div id="dynHed">
+<table id="PlHeader" style="height:51px;" cellspacing="0" cellpadding="0" border="0" summary="">
+<tr>
+<td valign="top"><a href="login.jsp" tabindex="1"><img src="privateLabels/rcfdev/pix/header/logo.gif" border="0" alt=""/></a></td>
+<td width="100%" style="background-image:url(privateLabels/rcfdev/pix/header/bkgd.gif);background-repeat:repeat;">&nbsp;</td>
+</tr>
+</table>
+</div>
+<script language="JavaScript" type="text/javascript">
+	// - this is the script in the iframe results page
+	var hedSpace = document.getElementById('dynHed').innerHTML;
+	parent.document.getElementById('HedArea').innerHTML = hedSpace;
+</script>

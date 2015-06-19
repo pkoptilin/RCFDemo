@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportTemplate>
+  <ReportTemplateName active="false">Clause Name and Language</ReportTemplateName>
+  <ReportTemplateParameters>
+    <MetaInfo>
+      <GroupByColumn ascending="true">ClauseLibraryModule/ReqClauseAttributes/name</GroupByColumn>
+      <ReportFilterType>AND</ReportFilterType>
+      <AgOpFilterType>OR</AgOpFilterType>
+      <ReportConditionType>Normal</ReportConditionType>
+    </MetaInfo>
+    <IncSummaryCalcs>true</IncSummaryCalcs>
+    <IncSummaryAvgs>true</IncSummaryAvgs>
+    <IncChart>true</IncChart>
+    <IncSummaryCount>true</IncSummaryCount>
+    <IncFilterCriteria>false</IncFilterCriteria>
+    <IncLineItemDetails>true</IncLineItemDetails>
+    <ResultFormat>html</ResultFormat>
+    <ReportType>0</ReportType>
+    <SelectedColumn>
+      <Label>Referring Record</Label>
+      <Path>ClauseLibraryModule/ReqClauseUsers/link</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Clause Name</Label>
+      <Path>ClauseLibraryModule/ReqClauseAttributes/name</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Risk Level</Label>
+      <Path>ClauseLibraryModule/ReqClauseAttributes/ClauseRisk</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Contract Type</Label>
+      <Path>ClauseLibraryModule/ReqClauseAttributes/ContractTypeRef</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label></Label>
+    </SelectedColumn>
+    <MatchField>
+      <Path>ClauseLibraryModule/ReqClauseUsers/link</Path>
+      <RelOp>OperatorDef:/isNotEmpty/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <MatchField>
+      <Path>BundleDef:/bundleType</Path>
+      <RelOp>OperatorDef:/contains/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value>Clause</Value>
+    </MatchField>
+    <MatchField>
+      <Path></Path>
+      <RelOp></RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <AggregateMatchField>
+      <Path></Path>
+      <RelOp></RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+      <AggregateOp></AggregateOp>
+    </AggregateMatchField>
+    <ActionFormulas></ActionFormulas>
+    <EmailActions></EmailActions>
+    <ChartingInfo>
+      <ChartType>PieChart</ChartType>
+      <TopNResults>0</TopNResults>
+      <TopOrBottom>Top</TopOrBottom>
+      <X_Axis>ClauseLibraryModule/ReqClauseAttributes/name</X_Axis>
+      <Y1_Axis>Sum</Y1_Axis>
+      <Y2_Axis>Count</Y2_Axis>
+      <Legend>true</Legend>
+      <ToolTips>true</ToolTips>
+      <displayRanges>true</displayRanges>
+      <columnToChart>null</columnToChart>
+    </ChartingInfo>
+  </ReportTemplateParameters>
+</ReportTemplate>
+

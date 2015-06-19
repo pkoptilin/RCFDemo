@@ -1,0 +1,52 @@
+#header .logo {
+  background: url("images/logo.png") no-repeat;
+}
+
+.icon-general {
+    background-image: url('./images/general.svg');
+}
+
+.icon-nda {
+    background-image: url('./images/nda.svg');
+}
+
+
+.icon-employment {
+    background-image: url('./images/employment.svg');
+}
+
+.icon-framework {
+    background-image: url('./images/framework.svg');
+}
+.icon-framework-2 {
+    background-image: url('./images/framework-2.svg');
+}
+.icon-framework-3 {
+    background-image: url('./images/framework-3.svg');
+}
+.icon-framework-4 {
+    background-image: url('./images/framework-4.svg');
+}
+
+
+.icon-phyisician {
+    background-image: url('./images/phyisician.svg');
+}
+.icon-procurement {
+    background-image: url('./images/procurement.svg');
+}
+.icon-procurement-2 {
+    background-image: url('./images/procurement-2.svg');
+}
+.icon-procurement-3 {
+    background-image: url('./images/procurement-3.svg');
+}
+.icon-realestate {
+    background-image: url('./images/realestate.svg');
+}
+.icon-repository {
+    background-image: url('./images/repository.svg');
+}
+.icon-sales {
+    background-image: url('./images/sales.svg');
+}

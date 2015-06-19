@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roles>
+    <role action="UPDATE" name="Base Viewer" parent="Base" visibility="global">
+        <privileges>
+            <permission access="no" name="Viewer" type="BundleDef:/ClauseLibraryBO/"/>
+            <permission access="no" name="Manager" type="BundleDef:/ClauseLibraryBO/"/>
+            <permission access="no" name="Librarian" type="BundleDef:/ClauseLibraryBO/"/>
+            <permission access="no" name="Viewer" type="BundleDef:/CNDABO/"/>
+            <permission access="no" name="EditAssemble" type="BundleDef:/CNDABO/"/>
+            <permission access="no" name="EditNegotiate" type="BundleDef:/CNDABO/"/>
+            <permission access="no" name="EditExecute" type="BundleDef:/CNDABO/"/>
+            <permission access="no" name="EditManage" type="BundleDef:/CNDABO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/CNDABO/"/>
+            <permission access="inherit" name="Organization Viewer" type="Account"/>
+            <permission access="inherit" name="Company Editor" type="Account"/>
+            <permission access="inherit" name="Group Editor" type="Account"/>
+            <permission access="inherit" name="Group Viewer" type="Account"/>
+            <permission access="inherit" name="Role Editor" type="Account"/>
+            <permission access="inherit" name="User Editor" type="Account"/>
+            <permission access="inherit" name="Account Viewer" type="Account"/>
+            <permission access="inherit" name="Composer: Approvals" type="Account"/>
+            <permission access="inherit" name="Composer: Rules" type="Account"/>
+            <permission access="inherit" name="Workgroup Editor" type="Account"/>
+            <permission access="inherit" name="Import Tool" type="Account"/>
+            <permission access="inherit" name="Authoring Administrator" type="Account"/>
+            <permission access="inherit" name="Approval Administrator" type="Account"/>
+            <permission access="inherit" name="Downloads" type="Account"/>
+            <permission access="inherit" name="Who Is On" type="Account"/>
+            <permission access="inherit" name="Activity Log Viewer" type="Account"/>
+            <permission access="inherit" name="Download as HTML" type="Account"/>
+            <permission access="inherit" name="Download as PDF" type="Account"/>
+            <permission access="inherit" name="Download as Word" type="Account"/>
+            <permission access="inherit" name="Download as Zip" type="Account"/>
+            <permission access="inherit" name="Scheduler Admin Page Viewer" type="Account"/>
+            <permission access="inherit" name="Debug Page Viewer" type="Account"/>
+            <permission access="inherit" name="Report Viewer" type="Account"/>
+            <permission access="inherit" name="Report Editor" type="Account"/>
+            <permission access="inherit" name="Report Terminator" type="Account"/>
+            <permission access="inherit" name="Security Reports Viewer" type="Account"/>
+            <permission access="inherit" name="Security Reports Editor" type="Account"/>
+            <permission access="inherit" name="Security Reports Terminator" type="Account"/>
+            <permission access="no" name="Viewer" type="BundleDef:/EmailAccountTemplateBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/EmailAccountTemplateBO/"/>
+            <permission access="no" name="Viewer" type="BundleDef:/DynamicInclusionBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/DynamicInclusionBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/DynamicInclusionBO/"/>
+            <permission access="no" name="Viewer" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditRequest" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditAssemble" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditCollaborate" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditNegotiate" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditExecute" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditManage" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="Viewer" type="BundleDef:/TemplateMgmtBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/TemplateMgmtBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/TemplateMgmtBO/"/>
+            <permission access="no" name="Viewer" type="BundleDef:/DCPBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/DCPBO/"/>
+            <permission access="no" name="Viewer" type="BundleDef:/CGenBO/"/>
+            <permission access="no" name="EditAssemble" type="BundleDef:/CGenBO/"/>
+            <permission access="no" name="EditNegotiate" type="BundleDef:/CGenBO/"/>
+            <permission access="no" name="EditExecute" type="BundleDef:/CGenBO/"/>
+            <permission access="no" name="EditManage" type="BundleDef:/CGenBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/CGenBO/"/>
+            <permission access="no" name="Viewer" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditRequest" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditAssemble" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditCollaborate" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditNegotiate" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditExecute" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditManage" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="Viewer" type="BundleDef:/DVendorBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/DVendorBO/"/>
+            <permission access="no" name="Viewer" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditRequest" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditAssemble" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditCollaborate" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditNegotiate" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditExecute" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditManage" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="Viewer" type="BundleDef:/Preferences/"/>
+            <permission access="no" name="Editor" type="BundleDef:/Preferences/"/>
+            <permission access="no" name="Viewer" type="BundleDef:/RREPBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/RREPBO/"/>
+<!--
+            <permission access="no" name="Create" type="BundleDef:/RREPBO/"/>
+-->
+            <permission access="no" name="Terminator" type="BundleDef:/RREPBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/EmailTemplateBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/EmailTemplateBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/EmailTemplateBO/"/>
+            <permission access="no" name="Viewer" type="BundleDef:/DCustomerBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/DCustomerBO/"/>
+        </privileges>
+    </role>
+    <role action="UPDATE" name="Approver" parent="Base" visibility="hierarchy">
+        <privileges>
+            <permission access="yes" name="Viewer" type="BundleDef:/ClauseLibraryBO/"/>
+            <permission access="no" name="Manager" type="BundleDef:/ClauseLibraryBO/"/>
+            <permission access="no" name="Librarian" type="BundleDef:/ClauseLibraryBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/CNDABO/"/>
+            <permission access="no" name="EditAssemble" type="BundleDef:/CNDABO/"/>
+            <permission access="no" name="EditNegotiate" type="BundleDef:/CNDABO/"/>
+            <permission access="no" name="EditExecute" type="BundleDef:/CNDABO/"/>
+            <permission access="no" name="EditManage" type="BundleDef:/CNDABO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/CNDABO/"/>
+            <permission access="inherit" name="Organization Viewer" type="Account"/>
+            <permission access="inherit" name="Company Editor" type="Account"/>
+            <permission access="inherit" name="Group Editor" type="Account"/>
+            <permission access="inherit" name="Group Viewer" type="Account"/>
+            <permission access="inherit" name="Role Editor" type="Account"/>
+            <permission access="inherit" name="User Editor" type="Account"/>
+            <permission access="inherit" name="Account Viewer" type="Account"/>
+            <permission access="inherit" name="Composer: Approvals" type="Account"/>
+            <permission access="inherit" name="Composer: Rules" type="Account"/>
+            <permission access="inherit" name="Workgroup Editor" type="Account"/>
+            <permission access="inherit" name="Import Tool" type="Account"/>
+            <permission access="inherit" name="Authoring Administrator" type="Account"/>
+            <permission access="inherit" name="Approval Administrator" type="Account"/>
+            <permission access="inherit" name="Downloads" type="Account"/>
+            <permission access="inherit" name="Who Is On" type="Account"/>
+            <permission access="inherit" name="Activity Log Viewer" type="Account"/>
+            <permission access="inherit" name="Download as HTML" type="Account"/>
+            <permission access="inherit" name="Download as PDF" type="Account"/>
+            <permission access="inherit" name="Download as Word" type="Account"/>
+            <permission access="inherit" name="Download as Zip" type="Account"/>
+            <permission access="inherit" name="Scheduler Admin Page Viewer" type="Account"/>
+            <permission access="inherit" name="Debug Page Viewer" type="Account"/>
+            <permission access="yes" name="Report Viewer" type="Account"/>
+            <permission access="yes" name="Report Editor" type="Account"/>
+            <permission access="yes" name="Report Terminator" type="Account"/>
+            <permission access="yes" name="Security Reports Viewer" type="Account"/>
+            <permission access="yes" name="Security Reports Editor" type="Account"/>
+            <permission access="yes" name="Security Reports Terminator" type="Account"/>
+            <permission access="no" name="Viewer" type="BundleDef:/EmailAccountTemplateBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/EmailAccountTemplateBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/DynamicInclusionBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/DynamicInclusionBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/DynamicInclusionBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditRequest" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditAssemble" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditCollaborate" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditNegotiate" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditExecute" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditManage" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/CSalesBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/TemplateMgmtBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/TemplateMgmtBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/TemplateMgmtBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/DCPBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/DCPBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/CGenBO/"/>
+            <permission access="no" name="EditAssemble" type="BundleDef:/CGenBO/"/>
+            <permission access="no" name="EditNegotiate" type="BundleDef:/CGenBO/"/>
+            <permission access="no" name="EditExecute" type="BundleDef:/CGenBO/"/>
+            <permission access="no" name="EditManage" type="BundleDef:/CGenBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/CGenBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditRequest" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditAssemble" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditCollaborate" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditNegotiate" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditExecute" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditManage" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/CProcBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/DVendorBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/DVendorBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditRequest" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditAssemble" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditCollaborate" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditNegotiate" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditExecute" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditManage" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/CFR1BO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/Preferences/"/>
+            <permission access="no" name="Editor" type="BundleDef:/Preferences/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/RREPBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/RREPBO/"/>
+<!--
+            <permission access="no" name="Create" type="BundleDef:/RREPBO/"/>
+-->
+            <permission access="no" name="Terminator" type="BundleDef:/RREPBO/"/>
+            <permission access="no" name="Viewer" type="BundleDef:/EmailTemplateBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/EmailTemplateBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/EmailTemplateBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/DCustomerBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/DCustomerBO/"/>
+        </privileges>
+    </role>
+    <role action="UPDATE" name="Contract Viewer" parent="Base" visibility="hierarchy">
+        <privileges>
+            <permission access="yes" name="Viewer" type="BundleDef:/ClauseLibraryBO/"/>
+            <permission access="no" name="Manager" type="BundleDef:/ClauseLibraryBO/"/>
+            <permission access="no" name="Librarian" type="BundleDef:/ClauseLibraryBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/CNDABO/"/>
+            <permission access="no" name="EditAssemble" type="BundleDef:/CNDABO/"/>
+            <permission access="no" name="EditNegotiate" type="BundleDef:/CNDABO/"/>
+            <permission access="no" name="EditExecute" type="BundleDef:/CNDABO/"/>
+            <permission access="no" name="EditManage" type="BundleDef:/CNDABO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/CNDABO/"/>
+            <permission access="inherit" name="Organization Viewer" type="Account"/>
+            <permission access="inherit" name="Company Editor" type="Account"/>
+            <permission access="inherit" name="Group Editor" type="Account"/>
+            <permission access="inherit" name="Group Viewer" type="Account"/>
+            <permission access="inherit" name="Role Editor" type="Account"/>
+            <permission access="inherit" name="User Editor" type="Account"/>
+            <permission access="inherit" name="Account Viewer" type="Account"/>
+            <permission access="inherit" name="Composer: Approvals" type="Account"/>
+            <permission access="inherit" name="Composer: Rules" type="Account"/>
+            <permission access="inherit" name="Workgroup Editor" type="Account"/>
+            <permission access="inherit" name="Import Tool" type="Account"/>
+            <permission access="inherit" name="Authoring Administrator" type="Account"/>
+            <permission access="inherit" name="Approval Administrator" type="Account"/>
+            <permission access="inherit" name="Downloads" type="Account"/>
+            <permission access="inherit" name="Who Is On" type="Account"/>
+            <permission access="inherit" name="Activity Log Viewer" type="Account"/>
+            <permission access="inherit" name="Download as HTML" type="Account"/>
+            <permission access="inherit" name="Download as PDF" type="Account"/>
+            <permission access="inherit" name="Download as Word" type="Account"/>
+            <permission access="inherit" name="Download as Zip" type="Account"/>
+            <permission access="inherit" name="Scheduler Admin Page Viewer" type="Account"/>
+            <permission access="inherit" name="Debug Page Viewer" type="Account"/>
+            <permission access="yes" name="Report Viewer" type="Account"/>
+            <permission access="yes" name="Report Editor" type="Account"/>
+            <permission access="yes" name="Report Terminator" type="Account"/>
+            <permission access="yes" name="Security Reports Viewer" type="Account"/>
+            <permission access="yes" name="Security Reports Editor" type="Account"/>
+            <permission access="yes" name="Security Reports Terminator" type="Account"/>
+            <permission access="no" name="Viewer" type="BundleDef:/EmailAccountTemplateBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/EmailAccountTemplateBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/DynamicInclusionBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/DynamicInclusionBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/DynamicInclusionBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditRequest" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditAssemble" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditCollaborate" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditNegotiate" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditExecute" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="EditManage" type="BundleDef:/CSalesBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/CSalesBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/TemplateMgmtBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/TemplateMgmtBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/TemplateMgmtBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/DCPBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/DCPBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/CGenBO/"/>
+            <permission access="no" name="EditAssemble" type="BundleDef:/CGenBO/"/>
+            <permission access="no" name="EditNegotiate" type="BundleDef:/CGenBO/"/>
+            <permission access="no" name="EditExecute" type="BundleDef:/CGenBO/"/>
+            <permission access="no" name="EditManage" type="BundleDef:/CGenBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/CGenBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditRequest" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditAssemble" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditCollaborate" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditNegotiate" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditExecute" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="EditManage" type="BundleDef:/CProcBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/CProcBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/DVendorBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/DVendorBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditRequest" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditAssemble" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditCollaborate" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditNegotiate" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditExecute" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="EditManage" type="BundleDef:/CFR1BO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/CFR1BO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/Preferences/"/>
+            <permission access="no" name="Editor" type="BundleDef:/Preferences/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/RREPBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/RREPBO/"/>
+<!--
+            <permission access="no" name="Create" type="BundleDef:/RREPBO/"/>
+-->
+            <permission access="no" name="Terminator" type="BundleDef:/RREPBO/"/>
+            <permission access="no" name="Viewer" type="BundleDef:/EmailTemplateBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/EmailTemplateBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/EmailTemplateBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/DCustomerBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/DCustomerBO/"/>
+        </privileges>
+    </role>
+    <role action="UPDATE" name="Contract Manager" parent="Base" visibility="hierarchy">
+        <privileges>
+            <permission access="yes" name="Viewer" type="BundleDef:/ClauseLibraryBO/"/>
+            <permission access="yes" name="Manager" type="BundleDef:/ClauseLibraryBO/"/>
+            <permission access="yes" name="Librarian" type="BundleDef:/ClauseLibraryBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/CNDABO/"/>
+            <permission access="yes" name="EditAssemble" type="BundleDef:/CNDABO/"/>
+            <permission access="yes" name="EditNegotiate" type="BundleDef:/CNDABO/"/>
+            <permission access="yes" name="EditExecute" type="BundleDef:/CNDABO/"/>
+            <permission access="yes" name="EditManage" type="BundleDef:/CNDABO/"/>
+            <permission access="yes" name="Terminator" type="BundleDef:/CNDABO/"/>
+            <permission access="inherit" name="Organization Viewer" type="Account"/>
+            <permission access="inherit" name="Company Editor" type="Account"/>
+            <permission access="inherit" name="Group Editor" type="Account"/>
+            <permission access="inherit" name="Group Viewer" type="Account"/>
+            <permission access="inherit" name="Role Editor" type="Account"/>
+            <permission access="inherit" name="User Editor" type="Account"/>
+            <permission access="inherit" name="Account Viewer" type="Account"/>
+            <permission access="inherit" name="Composer: Approvals" type="Account"/>
+            <permission access="inherit" name="Composer: Rules" type="Account"/>
+            <permission access="inherit" name="Workgroup Editor" type="Account"/>
+            <permission access="inherit" name="Import Tool" type="Account"/>
+            <permission access="inherit" name="Authoring Administrator" type="Account"/>
+            <permission access="inherit" name="Approval Administrator" type="Account"/>
+            <permission access="inherit" name="Downloads" type="Account"/>
+            <permission access="inherit" name="Who Is On" type="Account"/>
+            <permission access="inherit" name="Activity Log Viewer" type="Account"/>
+            <permission access="inherit" name="Download as HTML" type="Account"/>
+            <permission access="inherit" name="Download as PDF" type="Account"/>
+            <permission access="inherit" name="Download as Word" type="Account"/>
+            <permission access="inherit" name="Download as Zip" type="Account"/>
+            <permission access="inherit" name="Scheduler Admin Page Viewer" type="Account"/>
+            <permission access="inherit" name="Debug Page Viewer" type="Account"/>
+            <permission access="yes" name="Report Viewer" type="Account"/>
+            <permission access="yes" name="Report Editor" type="Account"/>
+            <permission access="yes" name="Report Terminator" type="Account"/>
+            <permission access="yes" name="Security Reports Viewer" type="Account"/>
+            <permission access="yes" name="Security Reports Editor" type="Account"/>
+            <permission access="yes" name="Security Reports Terminator" type="Account"/>
+            <permission access="no" name="Viewer" type="BundleDef:/EmailAccountTemplateBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/EmailAccountTemplateBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/DynamicInclusionBO/"/>
+            <permission access="yes" name="Editor" type="BundleDef:/DynamicInclusionBO/"/>
+            <permission access="yes" name="Terminator" type="BundleDef:/DynamicInclusionBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/CSalesBO/"/>
+            <permission access="yes" name="EditRequest" type="BundleDef:/CSalesBO/"/>
+            <permission access="yes" name="EditAssemble" type="BundleDef:/CSalesBO/"/>
+            <permission access="yes" name="EditCollaborate" type="BundleDef:/CSalesBO/"/>
+            <permission access="yes" name="EditNegotiate" type="BundleDef:/CSalesBO/"/>
+            <permission access="yes" name="EditExecute" type="BundleDef:/CSalesBO/"/>
+            <permission access="yes" name="EditManage" type="BundleDef:/CSalesBO/"/>
+            <permission access="yes" name="Terminator" type="BundleDef:/CSalesBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/TemplateMgmtBO/"/>
+            <permission access="yes" name="Editor" type="BundleDef:/TemplateMgmtBO/"/>
+            <permission access="yes" name="Terminator" type="BundleDef:/TemplateMgmtBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/DCPBO/"/>
+            <permission access="yes" name="Editor" type="BundleDef:/DCPBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/CGenBO/"/>
+            <permission access="yes" name="EditAssemble" type="BundleDef:/CGenBO/"/>
+            <permission access="yes" name="EditNegotiate" type="BundleDef:/CGenBO/"/>
+            <permission access="yes" name="EditExecute" type="BundleDef:/CGenBO/"/>
+            <permission access="yes" name="EditManage" type="BundleDef:/CGenBO/"/>
+            <permission access="yes" name="Terminator" type="BundleDef:/CGenBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/CProcBO/"/>
+            <permission access="yes" name="EditRequest" type="BundleDef:/CProcBO/"/>
+            <permission access="yes" name="EditAssemble" type="BundleDef:/CProcBO/"/>
+            <permission access="yes" name="EditCollaborate" type="BundleDef:/CProcBO/"/>
+            <permission access="yes" name="EditNegotiate" type="BundleDef:/CProcBO/"/>
+            <permission access="yes" name="EditExecute" type="BundleDef:/CProcBO/"/>
+            <permission access="yes" name="EditManage" type="BundleDef:/CProcBO/"/>
+            <permission access="yes" name="Terminator" type="BundleDef:/CProcBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/DVendorBO/"/>
+            <permission access="yes" name="Editor" type="BundleDef:/DVendorBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/CFR1BO/"/>
+            <permission access="yes" name="EditRequest" type="BundleDef:/CFR1BO/"/>
+            <permission access="yes" name="EditAssemble" type="BundleDef:/CFR1BO/"/>
+            <permission access="yes" name="EditCollaborate" type="BundleDef:/CFR1BO/"/>
+            <permission access="yes" name="EditNegotiate" type="BundleDef:/CFR1BO/"/>
+            <permission access="yes" name="EditExecute" type="BundleDef:/CFR1BO/"/>
+            <permission access="yes" name="EditManage" type="BundleDef:/CFR1BO/"/>
+            <permission access="yes" name="Terminator" type="BundleDef:/CFR1BO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/Preferences/"/>
+            <permission access="no" name="Editor" type="BundleDef:/Preferences/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/RREPBO/"/>
+            <permission access="yes" name="Editor" type="BundleDef:/RREPBO/"/>
+<!--
+            <permission access="yes" name="Create" type="BundleDef:/RREPBO/"/>
+-->
+            <permission access="yes" name="Terminator" type="BundleDef:/RREPBO/"/>
+            <permission access="no" name="Viewer" type="BundleDef:/EmailTemplateBO/"/>
+            <permission access="no" name="Editor" type="BundleDef:/EmailTemplateBO/"/>
+            <permission access="no" name="Terminator" type="BundleDef:/EmailTemplateBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/DCustomerBO/"/>
+            <permission access="yes" name="Editor" type="BundleDef:/DCustomerBO/"/>
+        </privileges>
+    </role>
+    <role action="UPDATE" name="Administrator" parent="Base" visibility="global">
+        <privileges>
+            <permission access="inherit" name="Viewer" type="BundleDef:/ClauseLibraryBO/"/>
+            <permission access="inherit" name="Manager" type="BundleDef:/ClauseLibraryBO/"/>
+            <permission access="inherit" name="Librarian" type="BundleDef:/ClauseLibraryBO/"/>
+            <permission access="inherit" name="Viewer" type="BundleDef:/CNDABO/"/>
+            <permission access="inherit" name="EditAssemble" type="BundleDef:/CNDABO/"/>
+            <permission access="inherit" name="EditNegotiate" type="BundleDef:/CNDABO/"/>
+            <permission access="inherit" name="EditExecute" type="BundleDef:/CNDABO/"/>
+            <permission access="inherit" name="EditManage" type="BundleDef:/CNDABO/"/>
+            <permission access="inherit" name="Terminator" type="BundleDef:/CNDABO/"/>
+            <permission access="yes" name="Organization Viewer" type="Account"/>
+            <permission access="yes" name="Company Editor" type="Account"/>
+            <permission access="yes" name="Group Editor" type="Account"/>
+            <permission access="yes" name="Group Viewer" type="Account"/>
+            <permission access="yes" name="Role Editor" type="Account"/>
+            <permission access="yes" name="User Editor" type="Account"/>
+            <permission access="yes" name="Account Viewer" type="Account"/>
+            <permission access="yes" name="Composer: Approvals" type="Account"/>
+            <permission access="yes" name="Composer: Rules" type="Account"/>
+            <permission access="yes" name="Workgroup Editor" type="Account"/>
+            <permission access="yes" name="Import Tool" type="Account"/>
+            <permission access="yes" name="Authoring Administrator" type="Account"/>
+            <permission access="yes" name="Approval Administrator" type="Account"/>
+            <permission access="yes" name="Downloads" type="Account"/>
+            <permission access="yes" name="Who Is On" type="Account"/>
+            <permission access="yes" name="Activity Log Viewer" type="Account"/>
+            <permission access="yes" name="Download as HTML" type="Account"/>
+            <permission access="yes" name="Download as PDF" type="Account"/>
+            <permission access="yes" name="Download as Word" type="Account"/>
+            <permission access="yes" name="Download as Zip" type="Account"/>
+            <permission access="inherit" name="Scheduler Admin Page Viewer" type="Account"/>
+            <permission access="inherit" name="Debug Page Viewer" type="Account"/>
+            <permission access="inherit" name="Report Viewer" type="Account"/>
+            <permission access="inherit" name="Report Editor" type="Account"/>
+            <permission access="inherit" name="Report Terminator" type="Account"/>
+            <permission access="inherit" name="Security Reports Viewer" type="Account"/>
+            <permission access="inherit" name="Security Reports Editor" type="Account"/>
+            <permission access="inherit" name="Security Reports Terminator" type="Account"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/EmailAccountTemplateBO/"/>
+            <permission access="yes" name="Editor" type="BundleDef:/EmailAccountTemplateBO/"/>
+            <permission access="inherit" name="Viewer" type="BundleDef:/DynamicInclusionBO/"/>
+            <permission access="inherit" name="Editor" type="BundleDef:/DynamicInclusionBO/"/>
+            <permission access="inherit" name="Terminator" type="BundleDef:/DynamicInclusionBO/"/>
+            <permission access="inherit" name="Viewer" type="BundleDef:/CSalesBO/"/>
+            <permission access="inherit" name="EditRequest" type="BundleDef:/CSalesBO/"/>
+            <permission access="inherit" name="EditAssemble" type="BundleDef:/CSalesBO/"/>
+            <permission access="inherit" name="EditCollaborate" type="BundleDef:/CSalesBO/"/>
+            <permission access="inherit" name="EditNegotiate" type="BundleDef:/CSalesBO/"/>
+            <permission access="inherit" name="EditExecute" type="BundleDef:/CSalesBO/"/>
+            <permission access="inherit" name="EditManage" type="BundleDef:/CSalesBO/"/>
+            <permission access="inherit" name="Terminator" type="BundleDef:/CSalesBO/"/>
+            <permission access="inherit" name="Viewer" type="BundleDef:/TemplateMgmtBO/"/>
+            <permission access="inherit" name="Editor" type="BundleDef:/TemplateMgmtBO/"/>
+            <permission access="inherit" name="Terminator" type="BundleDef:/TemplateMgmtBO/"/>
+            <permission access="inherit" name="Viewer" type="BundleDef:/DCPBO/"/>
+            <permission access="inherit" name="Editor" type="BundleDef:/DCPBO/"/>
+            <permission access="inherit" name="Viewer" type="BundleDef:/CGenBO/"/>
+            <permission access="inherit" name="EditAssemble" type="BundleDef:/CGenBO/"/>
+            <permission access="inherit" name="EditNegotiate" type="BundleDef:/CGenBO/"/>
+            <permission access="inherit" name="EditExecute" type="BundleDef:/CGenBO/"/>
+            <permission access="inherit" name="EditManage" type="BundleDef:/CGenBO/"/>
+            <permission access="inherit" name="Terminator" type="BundleDef:/CGenBO/"/>
+            <permission access="inherit" name="Viewer" type="BundleDef:/CProcBO/"/>
+            <permission access="inherit" name="EditRequest" type="BundleDef:/CProcBO/"/>
+            <permission access="inherit" name="EditAssemble" type="BundleDef:/CProcBO/"/>
+            <permission access="inherit" name="EditCollaborate" type="BundleDef:/CProcBO/"/>
+            <permission access="inherit" name="EditNegotiate" type="BundleDef:/CProcBO/"/>
+            <permission access="inherit" name="EditExecute" type="BundleDef:/CProcBO/"/>
+            <permission access="inherit" name="EditManage" type="BundleDef:/CProcBO/"/>
+            <permission access="inherit" name="Terminator" type="BundleDef:/CProcBO/"/>
+            <permission access="inherit" name="Viewer" type="BundleDef:/DVendorBO/"/>
+            <permission access="inherit" name="Editor" type="BundleDef:/DVendorBO/"/>
+            <permission access="inherit" name="Viewer" type="BundleDef:/CFR1BO/"/>
+            <permission access="inherit" name="EditRequest" type="BundleDef:/CFR1BO/"/>
+            <permission access="inherit" name="EditAssemble" type="BundleDef:/CFR1BO/"/>
+            <permission access="inherit" name="EditCollaborate" type="BundleDef:/CFR1BO/"/>
+            <permission access="inherit" name="EditNegotiate" type="BundleDef:/CFR1BO/"/>
+            <permission access="inherit" name="EditExecute" type="BundleDef:/CFR1BO/"/>
+            <permission access="inherit" name="EditManage" type="BundleDef:/CFR1BO/"/>
+            <permission access="inherit" name="Terminator" type="BundleDef:/CFR1BO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/Preferences/"/>
+            <permission access="yes" name="Editor" type="BundleDef:/Preferences/"/>
+            <permission access="inherit" name="Viewer" type="BundleDef:/RREPBO/"/>
+            <permission access="inherit" name="Editor" type="BundleDef:/RREPBO/"/>
+<!--
+            <permission access="inherit" name="Create" type="BundleDef:/RREPBO/"/>
+-->
+            <permission access="inherit" name="Terminator" type="BundleDef:/RREPBO/"/>
+            <permission access="yes" name="Viewer" type="BundleDef:/EmailTemplateBO/"/>
+            <permission access="yes" name="Editor" type="BundleDef:/EmailTemplateBO/"/>
+            <permission access="yes" name="Terminator" type="BundleDef:/EmailTemplateBO/"/>
+            <permission access="inherit" name="Viewer" type="BundleDef:/DCustomerBO/"/>
+            <permission access="inherit" name="Editor" type="BundleDef:/DCustomerBO/"/>
+        </privileges>
+    </role>
+</roles>

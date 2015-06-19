@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportTemplate>
+  <ReportTemplateName active="false">General Contracts By Counter Party</ReportTemplateName>
+  <ReportTemplateParameters>
+    <MetaInfo>
+      <PrimarySortingColumn ascending="true">BundleDef:/bundleType</PrimarySortingColumn>
+      <GroupByColumn ascending="true">Contract/ReqContractInfo/counterParty</GroupByColumn>
+      <ReportFilterType>AND</ReportFilterType>
+      <AgOpFilterType>AND</AgOpFilterType>
+      <ReportConditionType>Normal</ReportConditionType>
+    </MetaInfo>
+    <IncSummaryCalcs>true</IncSummaryCalcs>
+    <IncSummaryAvgs>false</IncSummaryAvgs>
+    <IncChart>true</IncChart>
+    <IncSummaryCount>true</IncSummaryCount>
+    <IncFilterCriteria>false</IncFilterCriteria>
+    <IncLineItemDetails>true</IncLineItemDetails>
+    <ResultFormat>html</ResultFormat>
+    <ReportType>0</ReportType>
+    <SelectedColumn>
+      <Label>Tracking #</Label>
+      <Path>BundleDef:/bundleTrackingNum</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Status</Label>
+      <Path>BundleDef:/bundleStatus</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Counter Party</Label>
+      <Path>Contract/ReqContractInfo/counterParty</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Contract ID</Label>
+      <Path>Contract/ReqContractInfo/name</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Total Contract Amount</Label>
+      <Path>Contract/ReqContractInfo/totalContractAmount</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Contract Type</Label>
+      <Path>Contract/ReqContractInfo/contractType</Path>
+    </SelectedColumn>
+    <MatchField>
+      <Path>BundleDef:/bundleType</Path>
+      <RelOp>OperatorDef:/contains/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value>General</Value>
+    </MatchField>
+    <MatchField>
+      <Path></Path>
+      <RelOp></RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <MatchField>
+      <Path></Path>
+      <RelOp></RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <ActionFormulas></ActionFormulas>
+    <EmailActions></EmailActions>
+    <ChartingInfo>
+      <ChartType>PieChart</ChartType>
+      <TopNResults>0</TopNResults>
+      <TopOrBottom>Top</TopOrBottom>
+      <X_Axis>Contract/ReqContractInfo/counterParty</X_Axis>
+      <Y1_Axis>Sum</Y1_Axis>
+      <Y2_Axis>Count</Y2_Axis>
+      <Legend>true</Legend>
+      <ToolTips>true</ToolTips>
+      <displayRanges>true</displayRanges>
+      <columnToChart>Contract/ReqContractInfo/totalContractAmount</columnToChart>
+    </ChartingInfo>
+  </ReportTemplateParameters>
+</ReportTemplate>
+

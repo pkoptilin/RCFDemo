@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportTemplate>
+  <ReportTemplateName active="false">Alerts Started Before Today</ReportTemplateName>
+  <ReportTemplateParameters>
+    <MetaInfo>
+      <PrimarySortingColumn ascending="true">BundleDef:/bundleType</PrimarySortingColumn>
+      <SecondarySortingColumn ascending="false">BundleDef:/bundleTrackingNum</SecondarySortingColumn>
+      <ReportFilterType>OR</ReportFilterType>
+      <AgOpFilterType>AND</AgOpFilterType>
+      <ReportConditionType>Normal</ReportConditionType>
+    </MetaInfo>
+    <IncSummaryCalcs>false</IncSummaryCalcs>
+    <IncSummaryAvgs>false</IncSummaryAvgs>
+    <IncChart>false</IncChart>
+    <IncSummaryCount>false</IncSummaryCount>
+    <IncFilterCriteria>false</IncFilterCriteria>
+    <IncLineItemDetails>true</IncLineItemDetails>
+    <ResultFormat>html</ResultFormat>
+    <ReportType>0</ReportType>
+    <SelectedColumn>
+      <Label>Tracking #</Label>
+      <Path>BundleDef:/bundleTrackingNum</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Category</Label>
+      <Path>BundleDef:/bundleType</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Landlord</Label>
+      <Path>RealEstateLease/ReqRealEstateLeaseInfo/landlord</Path>
+      <Path>NDA/ReqNDAInfo/counterParty</Path>
+      <Path>Contract/ReqContractInfo/counterParty</Path>
+      <Path>Lease/ReqScheduleInfo/lessor</Path>
+      <Path>ItContract/ReqItHardwareInfo/counterParty</Path>
+      <Path>EmployeeContract/ReqEmployeeContractInfo/counterParty</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Event Date</Label>
+      <Path>RealEstateLease/ReqReminder/resolvedEventDate</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Event Type</Label>
+      <Path>RealEstateLease/ReqReminder/eventType</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Subject</Label>
+      <Path>RealEstateLease/ReqReminder/subject</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Account User</Label>
+      <Path>RealEstateLease/ReqReminder/ReqReminderRecipientAccountUser/accountUserRecipient</Path>
+      <Path>RealEstateLease/ReqReminder/ReqReminderRecipientExternalUser/externalUserRecipient</Path>
+      <Path>NDA/ReqReminder/ReqReminderRecipientAccountUser/accountUserRecipient</Path>
+      <Path>NDA/ReqReminder/ReqReminderRecipientExternalUser/externalUserRecipient</Path>
+      <Path>Contract/ReqReminder/ReqReminderRecipientAccountUser/accountUserRecipient</Path>
+      <Path>Contract/ReqReminder/ReqReminderRecipientExternalUser/externalUserRecipient</Path>
+      <Path>Lease/ReqReminder/ReqReminderRecipientAccountUser/accountUserRecipient</Path>
+      <Path>Lease/ReqReminder/ReqReminderRecipientExternalUser/externalUserRecipient</Path>
+      <Path>ItContract/ReqReminder/ReqReminderRecipientAccountUser/accountUserRecipient</Path>
+      <Path>ItContract/ReqReminder/ReqReminderRecipientExternalUser/externalUserRecipient</Path>
+      <Path>EmployeeContract/ReqReminder/ReqReminderRecipientAccountUser/accountUserRecipient</Path>
+      <Path>EmployeeContract/ReqReminder/ReqReminderRecipientExternalUser/externalUserRecipient</Path>
+    </SelectedColumn>
+    <MatchField>
+      <Path>RealEstateLease/ReqReminder/notificationDate</Path>
+      <RelOp>OperatorDef:/isBeforeToday/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <MatchField>
+      <Path>NDA/ReqReminder/notificationDate</Path>
+      <RelOp>OperatorDef:/isBeforeToday/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <MatchField>
+      <Path>Contract/ReqReminder/notificationDate</Path>
+      <RelOp>OperatorDef:/isBeforeToday/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <MatchField>
+      <Path>Lease/ReqReminder/notificationDate</Path>
+      <RelOp>OperatorDef:/isBeforeToday/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <MatchField>
+      <Path>ItContract/ReqReminder/notificationDate</Path>
+      <RelOp>OperatorDef:/isBeforeToday/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <MatchField>
+      <Path>EmployeeContract/ReqReminder/notificationDate</Path>
+      <RelOp>OperatorDef:/isBeforeToday/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <ActionFormulas></ActionFormulas>
+    <EmailActions></EmailActions>
+    <ChartingInfo>
+      <ChartType>PieChart</ChartType>
+      <TopNResults>0</TopNResults>
+      <TopOrBottom>Top</TopOrBottom>
+      <X_Axis></X_Axis>
+      <Y1_Axis>Sum</Y1_Axis>
+      <Y2_Axis>Count</Y2_Axis>
+      <Legend>true</Legend>
+      <ToolTips>true</ToolTips>
+      <displayRanges>true</displayRanges>
+      <columnToChart>null</columnToChart>
+    </ChartingInfo>
+  </ReportTemplateParameters>
+</ReportTemplate>
+

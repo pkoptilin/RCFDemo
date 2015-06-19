@@ -1,0 +1,21 @@
+<fop version="1.0">
+
+    <strict-configuration>true</strict-configuration>
+    <strict-validation>true</strict-validation>
+    <base>./</base>
+    <font-base>./</font-base>
+
+    <renderers>
+        <renderer mime="application/pdf">
+            <fonts>
+                <font embed-url="classpath:/font/ARIALUNI.TTF" kerning="yes">
+                    <font-triplet name="arialuni" style="normal" weight="normal"/>
+                    <font-triplet name="arialuni" style="normal" weight="bold"/>
+                    <font-triplet name="arialuni" style="italic" weight="normal"/>
+                    <font-triplet name="arialuni" style="italic" weight="bold"/>
+                </font>
+            </fonts>
+        </renderer>
+    </renderers>
+
+</fop>

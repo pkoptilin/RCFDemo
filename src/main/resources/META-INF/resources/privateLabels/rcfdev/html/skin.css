@@ -1,0 +1,751 @@
+/* Selectica Private Label Styles */
+/* POSITIONED ELEMENTS */
+.AppNav							{	padding-top:27px;	}
+.SubNav1						{	top:50px;	}
+.Utils							{	top:77px;	}
+.ContentArea					{	margin:43px 0px 10px 0px;	}
+.Bump							{	height:18px;	}
+.SearchBox						{	top:103px;	}
+iframe.accountSettingsIframe,
+iframe.filteringCriteriaIframe,
+iframe.actionFormulaIframe		{	top:1px;left:0px;background-color:#fff	}
+
+#to get the 90th look and feel
+#a,
+              #a:visited						{	color:#009;text-decoration:underline;}
+#a:hover,
+#a:visited:hover					{	color:#f60;text-decoration:underline;	}
+
+a:link,
+a:link:visited					{	color:#293D6B;	}
+a:link:hover,
+a:link:visited:hover			{	color:#666;	}
+
+/* CUSTOM ELEMENTS */
+.AppNav	a						{	background:url('../../../pix/themes/blue/tab_left.gif') no-repeat left top;	}
+.AppNav a span					{	background:url('../../../pix/themes/blue/tab_right.gif') no-repeat right top;	}
+.SubNav1						{	background:url('../../../pix/themes/blue/bkgd_navbar2.gif') repeat-x;	}
+.SubNav1 a,
+.SubNav1 a:visited,
+.SubNav1 a:hover,
+.SubNav1 a:visited:hover		{	background-image:url('../../../pix/themes/blue/bkgd_navbar2.gif');	}
+.SubNav1 a:hover,
+.SubNav1 a:visited:hover,
+.SubNav1 a.Here,
+.SubNav1 a.Here:visited,
+.SubNav1 a.Here:hover,
+.SubNav1 a.Here:visited:hover	{	background:url('../../../pix/themes/blue/tabHere_bkgd.gif');color:#fff;	}
+/* SUBNAV2 IS NECESSARY HERE TO RESET SUBNAV1 CASCADE EFFECTS */
+.SubNav2						{	background:url('../../../pix/themes/blue/nav3.gif');	}
+.SubNav2 a,
+.SubNav2 a:visited				{	background:url('../../../pix/themes/blue/libhover.gif') no-repeat right top;color:#000;	}
+.SubNav2 a:hover,
+.SubNav2 a:visited:hover,
+.SubNav2 a.Here,
+.SubNav2 a.Here:hover,
+.SubNav2 a.Here:visited,
+.SubNav2 a.Here:visited:hover	{	background:url('../../../pix/themes/blue/lib.gif') no-repeat right top;color:#000;	}
+.SubNav4						{	background:url('../../../pix/themes/blue/nav3.gif');border-color:#72A7C3;	}
+.rC2, .rC3, .rC4				{	background:#C1D3DD;	}
+.headerContent,.headerContent3,
+.HeaderAttached,
+.HeaderFilterAttached			{overflow:hidden;zoom:1;color:#15428b;padding:5px 3px 2px 5px;border-top:1px solid #99bbe8; border-bottom:1px solid #99bbe8;}
+.headerContent3			{	padding:4px 0px 0px 4px; border-top:0px solid #99bbe8; font-weight: bold; font-size: 1em; background:#dfe8f6;}
+.rC .rC1,.rD .rC2,.rD .rC3,.rD .rC4
+{	background:#72A7C3;	}
+.ResourceArea,.Sticky,.Summary,fieldset,.DTreeHolder2,.Sticky3,
+.headerContent,.headerContent3,.HeaderAttached,.HeaderFilterAttached,
+.rC .rC2,.rC .rC3,.rC .rC4,
+.rD .rC1,.rD .rC2,.rD .rC3,.rD .rC4
+{	border-color:#99bbe8;	}
+.rD .rC1						{	background:#72A7C3;	}
+.SummaryTable					{	background-color: #f7f7f7; }
+.historyBox	fieldset table,
+.UserGuides						{	background-color:#F4FAFD;	}
+
+.PlFooter						{	height:26px; }
+
+.TopLinks a:link,
+.TopLinks a:visited				{
+    color:#009;
+}
+.TopLinks a:link:hover,
+.TopLinks a:visited:hover		{
+    text-decoration:underline;
+}
+.FieldRow .FieldName,
+.FieldRowError .FieldName		{
+    width:150px;
+    height:100%;
+    height:auto !important;
+    float:left;
+    padding-right:25px;
+}
+.FieldRow .FieldValue			{
+    width:50%;
+
+}
+
+.SummaryRow4 .FieldName,
+td.FieldName,
+.SummaryRow4 .SumName,
+td.SumName
+{
+    width:180px;
+    height:100%;
+    padding:0px 0px 0px 5px;
+    vertical-align:top;
+}
+
+.FieldValue a				{	color:#009;text-decoration:underline;}
+.TopControls a				{	color:#009;text-decoration:underline;}
+.TopWFControls a				{	color:#009;text-decoration:underline;}
+
+/* New ui */
+
+td.SumName				{
+    width:20%;
+    padding:0;
+}
+
+.FieldValue a				{	color: rgba(20, 90, 126, 1);}
+
+.FieldRowError .FieldName		{
+    width:200px !important;
+    text-align:right;
+    color:rgba(159, 187, 219, 1);
+}
+
+.HeaderFilterAttached			{
+    overflow:hidden;zoom:1;color:#15428b;padding:5px 3px 2px 5px;border-top:1px solid #99bbe8; border-bottom:1px solid #99bbe8;
+}
+.headerContent,
+.headerContent3			{
+    background:rgba(203, 223, 246, 1) !important;
+    overflow:hidden;
+    color: #000000;
+    zoom:1;
+    min-height:25px;
+    height:25px;
+    padding: 8px 0 0;
+}
+.headerContent,
+.headerContent3 .x-toolbar-cell .xtb-text	{
+    font-size: 12px;
+    color: rgba(20, 90, 126, 1);
+    text-indent: 15px;
+    line-height: 20px;
+    font-family: Verdana;
+}
+.headerContent3 .x-toolbar-cell .xtb-text	{
+    padding: 0;
+}
+.headerContent {
+    margin-bottom: 15px;
+    padding: 5px 0;
+    line-height: 25px;
+}
+
+
+/* Navigation */
+
+.AppNav>a>span:nth-child(2) {
+    display: block !important;
+}
+.AppNav>a>span:nth-child(3) {
+    display: block !important;
+}
+
+.SubNav1>a>span:nth-child(1), .SubNav2>a>span:nth-child(1) {
+    color: inherit !important;
+    background: none;
+}
+
+.SubNav2>a>span:nth-child(1) {
+    padding-left: 10px !important;
+    padding-top: 3px !important;
+    padding-bottom: 2px !important;
+    background: none;
+}
+
+.SubNav2>a.Here>span {
+    color: #145a7e !important;
+}
+
+.SubNav1>a>span:nth-child(2), .SubNav2>a>span:nth-child(2) {
+    display: block !important;
+}
+.SubNav1>a>span:nth-child(3), .SubNav2>a>span:nth-child(3) {
+    display: block !important;
+}
+
+
+.AppNav>a {
+    padding: 0 !important;
+    background-image: none !important;
+    color: #fff !important;
+    margin-left: -5px;
+    overflow: visible !important;
+}
+
+.AppNav>a:nth-child(2) {
+    margin-right: 5px !important;
+}
+
+.AppNav>a>span {
+    background-image: none !important;
+    background-color: #4e8aab !important;
+    float: left;
+    padding-right: 0;
+}
+
+.AppNav>a>span:nth-child(1) {
+    padding-left: 10px;
+}
+
+.AppNav>a>span:nth-child(2) {
+    float: left;
+    border-bottom: 10px solid #4e8aab;
+    border-right: 15px solid transparent;
+    background-color: transparent !important;
+    width: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+}
+
+.AppNav>a>span:nth-child(3) {
+    background-color: #4e8aab !important;
+    width: 15px;
+    padding: 0 !important;
+    margin-left: -15px;
+    margin-top: 10px;
+    height: 14px;
+    -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.AppNav>a.Here {
+    position: relative;
+    z-index: 99;
+}
+
+.AppNav>a.disable-nav>span:nth-child(1) {
+    background-color: #ACACAC !important;
+}
+
+.AppNav>a.disable-nav>span:nth-child(2) {
+    border-bottom-color: #ACACAC;
+}
+
+.AppNav>a.disable-nav>span:nth-child(3) {
+    background-color: #ACACAC !important;
+}
+
+.AppNav>a.Here.disable-nav>span {
+    background-color: #D4D4D4 !important;
+}
+
+.AppNav>a.Here.disable-nav>span:nth-child(2) {
+    border-bottom-color: #D4D4D4;
+}
+
+
+.AppNav>a.Here>span {
+    background-color: #def1fc !important;
+    color: #145a7e;
+}
+
+.AppNav>a.Here>span:nth-child(2) {
+    background-color: transparent !important;
+    border-bottom: 10px solid #def1fc;
+}
+
+.AppNav>a:not(.Here):hover>span {
+    background-color: #71A3BE !important;
+}
+
+.AppNav>a:not(.Here):hover>span:nth-child(2) {
+    background-color: transparent !important;
+    border-bottom: 10px solid #71A3BE;
+}
+
+.AppNav	a.Here span,
+.AppNav	a.Here:hover span,
+.AppNav	a.Here:visited span {
+
+}
+.SubNav1 {
+    border-top: none !important;
+    z-index: 100 !important;
+    background-color: #def1fc !important;
+    background-image: none !important;
+}
+.SubNav1>a {
+    background: none !important;
+    padding: 0;
+    height: 26px !important;
+    margin-left: -1px;
+    overflow: visible !important;
+}
+
+.SubNav1>a:last-child>span:nth-child(2) {
+    border-right: none;
+}
+
+.SubNav1>a>span {
+    background: none !important;
+    color: #145a7e;
+    padding: 5px !important;
+}
+
+.SubNav1>a>span:nth-child(1) {
+    float: left;
+    padding: 6px 10px !important;
+}
+
+.SubNav1>a>span:nth-child(2) {
+    float: left;
+    padding: 0;
+    border-right: 1px solid #a1c3d6;
+    height: 1px;
+    padding: 5px 0 !important;
+    margin-top: 8px;
+}
+
+.SubNav1>a:hover, .SubNav1>a.Here {
+    background: none !important;
+    margin: 0;
+    padding: 0;
+    height: 26px !important;
+    margin-left: -1px;
+    margin-right: 1px;
+}
+
+.SubNav1>a:hover, .SubNav1>a.Here {
+    padding-right: 5px\0/;
+    margin-left: -6px\0/;
+}
+.SubNav1>a {
+    margin-left: -6px\0/;
+}
+
+.SubNav1:not(.disabled-nav-wrapper)>a:hover>span:nth-child(2), .SubNav1:not(.disabled-nav-wrapper)>a.Here>span:nth-child(2) {
+    border-right: none;
+}
+
+.SubNav1:not(.disabled-nav-wrapper)>a:hover>span:nth-child(3), .SubNav1:not(.disabled-nav-wrapper)>a.Here>span:nth-child(3) {
+    background-color: #def1fc !important;
+}
+
+.SubNav1>a:hover>span:nth-child(3), .SubNav1>a.Here>span:nth-child(3) {
+    margin-top: 26px;
+    padding: 0 !important;
+    height: 3px;
+}
+
+.SubNav1:not(.disabled-nav-wrapper)>a:hover>span, .SubNav1:not(.disabled-nav-wrapper)>a.Here>span {
+    color: #fff;
+    background-color: #145a7e !important;
+}
+
+.SubNav1.disabled-nav-wrapper {
+    background-color: #D4D4D4 !important;
+}
+
+.SubNav1.disabled-nav-wrapper>a.Here>span:nth-child(1) {
+    background-color: #ACACAC !important;
+}
+
+
+.SubNav2.disabled-nav-wrapper>a>span {
+    background-color: #ACACAC !important;
+}
+
+.SubNav2.disabled-nav-wrapper>a>span:nth-child(2) {
+    border-bottom-color: #ACACAC;
+}
+
+.SubNav2.disabled-nav-wrapper>a>span:nth-child(3) {
+    background-color: #ACACAC !important;
+}
+
+.SubNav2.disabled-nav-wrapper>a.Here>span {
+    background-color: #FFF !important;
+}
+
+.SubNav2.disabled-nav-wrapper>a.Here>span:nth-child(2) {
+    border-bottom-color: #FFF;
+}
+
+.SubNav2.disabled-nav-wrapper {
+    background-color: #D4D4D4 !important;
+}
+
+.SubNav2 {
+    overflow: hidden;
+}
+
+.SubNav2 {
+    background-color: #145a7e !important;
+    background-image: none !important;
+}
+
+.SubNav2>img {
+    width: 0;
+}
+
+.SubNav2>a, .SubNav2>a:hover {
+    background-image: none !important;
+    border: 0px !important;
+    color: #fff !important;
+    height: 20px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-top: 6px !important;
+    margin-left: -5px !important;
+    position: static;
+    overflow: visible !important;
+}
+
+.SubNav2>a.Here,
+.SubNav2>a.Here:hover,
+.SubNav2>a:hover {
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-top: 6px !important;
+    margin-left: -5px !important;
+}
+
+.SubNav2>a:nth-child(2), .SubNav2>a.Here:nth-child(2), .SubNav2>a:hover:nth-child(2) {
+    margin-left: 5px !important;
+}
+
+.SubNav2>a>span {
+    background-image: none !important;
+    color: #fff;
+    background-image: none !important;
+    background-color: #4e8aab !important;
+    float: left;
+    padding-right: 0;
+    padding-top: 3px;
+    z-index: 999;
+}
+
+
+.SubNav2>a>span:nth-child(1) {
+    padding-left: 10px;
+    padding-bottom: 3px !important;
+}
+
+.SubNav2>a>span:nth-child(2) {
+    float: left;
+    border-bottom: 10px solid #4e8aab;
+    border-right: 15px solid transparent;
+    background-color: transparent !important;
+    width: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+.SubNav2>a>span:nth-child(3) {
+    background-color: #4e8aab !important;
+    width: 15px;
+    padding: 0 !important;
+    margin-left: -15px !important;
+    margin-top: 10px;
+    height: 14px;
+    position: relative;
+    -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.SubNav2>a.Here {
+    position: relative;
+    z-index: 999 !important;
+}
+
+.SubNav2>a.Here>span {
+    background-color: #dfe8f6 !important;
+    color: #145a7e;
+}
+
+.SubNav2>a.Here>span:nth-child(2) {
+    background-color: transparent !important;
+    border-bottom: 10px solid #dfe8f6;
+}
+
+.SubNav2>a:not(.Here):hover>span {
+    background-color: #71A3BE !important;
+}
+
+.SubNav2>a:not(.Here):hover>span:nth-child(2) {
+    background-color: transparent !important;
+    border-bottom: 10px solid #71A3BE;
+}
+
+.Utils .x-btn-ml {
+    background-position: -6px -24px;
+}
+
+.Utils .x-btn-mr {
+    background-position: -9px -24px;
+}
+
+.Utils .x-btn-mc {
+    background-position: 0 -2168px;
+}
+
+.Utils .x-btn-tl {
+    background-position: -6px 0;
+}
+
+.Utils .x-btn-tc {
+    background-position: 0 -9px;
+}
+
+.Utils .x-btn-tr {
+    background-position: -9px 0;
+}
+
+.Utils .x-btn-bl {
+    background-position: -6px -3px;
+}
+
+.Utils .x-btn-bc {
+    background-position: 0 -18px;
+}
+
+.Utils .x-btn-br {
+    background-position: -9px -3px;
+}
+
+.Utils input[type="text"] {
+    padding: 3px;
+}
+
+.Utils .x-toolbar .x-item-disabled {
+    opacity: 0.95;
+}
+
+.AppNav a span {
+    letter-spacing: 1px;
+}
+
+.SubNav1 a.disable-nav {
+    color: #666 !important;
+}
+
+.SubNav1 a:hover.disable-nav {
+    color: #fff !important;
+}
+
+.SubNav2 a.disable-nav {
+    color: #ccc !important;
+}
+
+.SubNav2 a:hover.disable-nav {
+    color: #ccc !important;
+}
+
+/* End Navigation */
+
+.TopWFControls					{	padding:0 5px 10px; background: #fff;}
+
+.full-width-light-legend		{
+    margin: 0;
+    padding: 0;
+    background: rgba(203, 223, 246, 1) !important;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(20, 90, 126, 1);
+    display: block;
+    width: 100%;
+    text-indent: 15px;
+    margin-bottom: 15px;
+    border: none;
+}
+.full-width-light-legend:before {
+    content: '';
+    display: block;
+    float: left;
+    height: 30px;
+    background: rgba(203, 223, 246, 1);
+    width: 15px;
+    border-right: 3px solid #fff;
+}
+
+
+.headerContent {
+    font-size: 12px !important;
+    font-family: Verdana !important;
+    padding-bottom: 4px !important;
+    color: rgba(20, 90, 126, 1) !important;
+    line-height: 24px !important;
+    font-weight: bold !important;
+    border: none !important;
+}
+.headerContent strong {
+    margin-top: 1px;
+    display: block;
+}
+
+.CentCol>.headerContent {
+    margin-bottom: 0 !important;
+}
+
+.headerContent3 {
+    font-size: 12px !important;
+    font-family: Verdana !important;
+    color: rgba(20, 90, 126, 1) !important;
+    margin-bottom: 5px;
+}
+
+.headerContent3 .Left {
+    margin-left: 5px;
+}
+
+#lboSearch_Text2 {
+    margin-top: 8px;
+}
+
+
+/* Buttons */
+
+button:not(.x-btn-text), input[type=button], input[type=submit] {
+    background: #def1fc;
+    cursor: pointer;
+    font-family: verdana !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    line-height: 25px;
+    white-space: nowrap;
+    color: #145a7e !important;
+    padding: 0 8px;
+    margin: 0 5px;
+    border: 0 !important;
+    border-radius: 3px;
+}
+button:not(.x-btn-text):hover, input[type=button]:hover, input[type=submit]:hover {
+    background: #66a0c1;
+    color: #fff !important;
+}
+.ui-dialog-buttonset button {
+    background: #def1fc !important;
+}
+.ui-dialog-buttonset button:hover {
+    background: #66a0c1 !important;
+    color: #fff !important;
+}
+.ui-button-text-only .ui-button-text {
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: inherit !important;
+}
+
+button:not(.x-btn-text):disabled, input[type=button]:disabled, input[type=submit]:disabled {
+    background-color: #ECF8FF !important;
+    color: #AAA !important;
+}
+
+/* End buttons */
+
+.FileUpload,
+.InputField,
+.SearchableInputField,
+.Date,
+select,
+textarea						{
+
+    color:rgba(20, 90, 126, 1);
+}
+
+.headerContent2					{
+    background:rgba(203, 223, 246, 1) !important;
+    overflow:hidden;
+    color: #000000;
+    zoom:1;
+    min-height:25px;
+    height:25px;
+    padding: 5px 0;
+    border-bottom: none;
+}
+.headerContent2 .x-toolbar-cell .xtb-text	{
+    font-size: 12px;
+    color: rgba(20, 90, 126, 1);
+    text-indent: 15px;
+    padding: 0;
+    line-height: 20px;
+    font-family: Verdana;
+}
+
+.SummaryRow4 .FieldName,
+.SummaryRow4 .FieldValue,
+td.FieldName,
+td.FieldValue,
+.SummaryRow4 .SumName,
+.SummaryRow4 .SumValue,
+td.SumName,
+td.SumValue,
+.FieldName,
+.FieldValue						{
+    width:30%;
+    height:100%;
+    padding:0px 0px 0px 10px;
+    line-height: 24px;
+}
+.SummaryRow4 .FieldName,
+div.FieldName,
+td.FieldName					{
+    color:rgba(11, 92, 185, 1) !important;
+    text-align: right !important;
+}
+.SummaryRow4 .FieldValue,
+td.FieldValue					{
+    color:rgba(20, 90, 126, 1);
+}
+
+.header-bordered {
+    background: #fff; margin:10px 0;
+}
+
+.html-block-table {
+    margin:10px 0;
+}
+
+.data-set-controls {
+    padding:0 5px 10px; background: #fff;
+}
+
+.wf-status-edit {
+    color: rgba(20, 90, 126, 1);
+    font-weight: normal;
+    font-size: 12px;
+    padding-top: 0;
+}
+
+.SummaryTable {
+    background-color: #fff;
+}
+
+.FieldRow .FieldName, .FieldRowError .FieldName {
+    width: 150px !important;
+}
+
+.html-block-table .FieldName {
+    width: 150px;
+}
+
+.TopWFControls {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+evaluateScriptFn {
+    display: none;
+}

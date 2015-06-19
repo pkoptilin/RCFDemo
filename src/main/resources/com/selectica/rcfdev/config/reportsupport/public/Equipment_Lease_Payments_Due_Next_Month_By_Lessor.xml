@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportTemplate>
+  <ReportTemplateName active="false">Equipment Lease Payments Due Next Month By Lessor</ReportTemplateName>
+  <ReportTemplateParameters>
+    <MetaInfo>
+      <GroupByColumn ascending="true">Lease/ReqScheduleInfo/lessor</GroupByColumn>
+      <ReportFilterType>AND</ReportFilterType>
+      <AgOpFilterType>AND</AgOpFilterType>
+      <ReportConditionType>Normal</ReportConditionType>
+    </MetaInfo>
+    <IncSummaryCalcs>true</IncSummaryCalcs>
+    <IncSummaryAvgs>false</IncSummaryAvgs>
+    <IncChart>true</IncChart>
+    <IncSummaryCount>false</IncSummaryCount>
+    <IncFilterCriteria>true</IncFilterCriteria>
+    <IncLineItemDetails>true</IncLineItemDetails>
+    <ResultFormat>html</ResultFormat>
+    <ReportType>0</ReportType>
+    <SelectedColumn>
+      <Label>Lessor</Label>
+      <Path>Lease/ReqScheduleInfo/lessor</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Vendor ID</Label>
+      <Path>Lease/ReqScheduleInfo/supplierId</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Pay date</Label>
+      <Path>Lease/ReqPaymentGenerator/ReqPaymentStream/paymentDate</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Payment Description</Label>
+      <Path>Lease/ReqPaymentGenerator/ReqPaymentStream/paymentDescription</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Pay tax</Label>
+      <Path>Lease/ReqPaymentGenerator/ReqPaymentStream/paymentTax</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Payment amount</Label>
+      <Path>Lease/ReqPaymentGenerator/ReqPaymentStream/paymentAmount</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Cost Center</Label>
+      <Path>Lease/ReqPaymentGenerator/ReqPaymentStream/paymentCostCenter</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Budget Number</Label>
+      <Path>Lease/ReqPaymentGenerator/ReqPaymentStream/paymentBudgetNumber</Path>
+    </SelectedColumn>
+    <MatchField>
+      <Path>Lease/ReqPaymentGenerator/ReqPaymentStream/paymentDate</Path>
+      <RelOp>OperatorDef:/isNextMonth/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <MatchField>
+      <Path>BundleDef:/bundleType</Path>
+      <RelOp>OperatorDef:/equals/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value>Equipment Lease</Value>
+    </MatchField>
+    <MatchField>
+      <Path></Path>
+      <RelOp></RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <ActionFormulas></ActionFormulas>
+    <EmailActions></EmailActions>
+    <ChartingInfo>
+      <ChartType>PieChart</ChartType>
+      <TopNResults>0</TopNResults>
+      <TopOrBottom>Top</TopOrBottom>
+      <X_Axis>Lease/ReqScheduleInfo/lessor</X_Axis>
+      <Y1_Axis>Sum</Y1_Axis>
+      <Y2_Axis>Count</Y2_Axis>
+      <Legend>true</Legend>
+      <ToolTips>true</ToolTips>
+      <displayRanges>true</displayRanges>
+      <columnToChart>Lease/ReqPaymentGenerator/ReqPaymentStream/paymentTax</columnToChart>
+    </ChartingInfo>
+  </ReportTemplateParameters>
+</ReportTemplate>
+

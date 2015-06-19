@@ -1,0 +1,25 @@
+*.class
+bin/
+target/
+*~
+.metadata/
+.settings/
+.project
+.classpath
+test-output/
+
+# IDE Project
+.idea/
+*.iml
+*.ipr
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+#maven
+**/target

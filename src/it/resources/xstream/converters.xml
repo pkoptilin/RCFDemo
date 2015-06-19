@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<list>
+    <!--<string>com.selectica.qa.automation.converters.CLMDateTypeConverter</string>-->
+    <!--<string>com.selectica.qa.automation.converters.CLMDateTimeTypeConverter</string>-->
+    <!--<string>com.selectica.qa.automation.converters.CLMCurrencyTypeConverter</string>-->
+    <string>com.selectica.qa.automation.converters.CLMDateConverter</string>
+    <string>com.selectica.qa.automation.converters.MapEntryConverter</string>
+</list>

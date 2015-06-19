@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportTemplate>
+  <ReportTemplateName active="false">Contracts Expiring This Quarter</ReportTemplateName>
+  <ReportTemplateParameters>
+    <MetaInfo>
+      <PrimarySortingColumn ascending="true">BundleDef:/bundleTrackingNum</PrimarySortingColumn>
+      <GroupByColumn ascending="true">BundleDef:/bundleType</GroupByColumn>
+      <ReportFilterType>OR</ReportFilterType>
+      <AgOpFilterType>AND</AgOpFilterType>
+      <ReportConditionType>Normal</ReportConditionType>
+    </MetaInfo>
+    <IncSummaryCalcs>false</IncSummaryCalcs>
+    <IncSummaryAvgs>false</IncSummaryAvgs>
+    <IncChart>false</IncChart>
+    <IncSummaryCount>false</IncSummaryCount>
+    <IncFilterCriteria>false</IncFilterCriteria>
+    <IncLineItemDetails>true</IncLineItemDetails>
+    <ResultFormat>html</ResultFormat>
+    <ReportType>0</ReportType>
+    <SelectedColumn>
+      <Label>Tracking #</Label>
+      <Path>BundleDef:/bundleTrackingNum</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Owning Group</Label>
+      <Path>BundleDef:/bundleOwnerGroup</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Owning User</Label>
+      <Path>BundleDef:/bundleOwnerUser</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Counter-Party</Label>
+      <Path>RealEstateLease/ReqRealEstateLeaseInfo/landlord</Path>
+      <Path>NDA/ReqNDAInfo/counterParty</Path>
+      <Path>Contract/ReqContractInfo/counterParty</Path>
+      <Path>Lease/ReqScheduleInfo/lessor</Path>
+      <Path>ItContract/ReqItHardwareInfo/counterParty</Path>
+      <Path>EmployeeContract/ReqEmployeeContractInfo/counterParty</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>End Date</Label>
+      <Path>RealEstateLease/ReqRealEstateLeaseInfo/endDate</Path>
+      <Path>NDA/ReqNDAInfo/endDate</Path>
+      <Path>Contract/ReqContractInfo/endDate</Path>
+      <Path>Lease/ReqScheduleInfo/endDate</Path>
+      <Path>ItContract/ReqItHardwareInfo/endDate</Path>
+      <Path>EmployeeContract/ReqEmployeeContractInfo/endDate</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>ID</Label>
+      <Path>RealEstateLease/ReqRealEstateLeaseInfo/name</Path>
+      <Path>NDA/ReqNDAInfo/name</Path>
+      <Path>Contract/ReqContractInfo/name</Path>
+      <Path>Lease/ReqScheduleInfo/name</Path>
+      <Path>ItContract/ReqItHardwareInfo/name</Path>
+      <Path>EmployeeContract/ReqEmployeeContractInfo/name</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Counter Party</Label>
+      <Path>Contract/ReqContractInfo/counterParty</Path>
+    </SelectedColumn>
+    <MatchField>
+      <Path>RealEstateLease/ReqRealEstateLeaseInfo/endDate</Path>
+      <RelOp>OperatorDef:/isThisQuarter/</RelOp>
+      <Value></Value>
+      <CrossContract>false</CrossContract>
+    </MatchField>
+    <MatchField>
+      <Path>NDA/ReqNDAInfo/endDate</Path>
+      <RelOp>OperatorDef:/isThisQuarter/</RelOp>
+      <Value></Value>
+      <CrossContract>false</CrossContract>
+    </MatchField>
+    <MatchField>
+      <Path>Contract/ReqContractInfo/endDate</Path>
+      <RelOp>OperatorDef:/isThisQuarter/</RelOp>
+      <Value></Value>
+      <CrossContract>false</CrossContract>
+    </MatchField>
+    <MatchField>
+      <Path>Lease/ReqScheduleInfo/endDate</Path>
+      <RelOp>OperatorDef:/isThisQuarter/</RelOp>
+      <Value></Value>
+      <CrossContract>false</CrossContract>
+    </MatchField>
+    <MatchField>
+      <Path>ItContract/ReqItHardwareInfo/endDate</Path>
+      <RelOp>OperatorDef:/isThisQuarter/</RelOp>
+      <Value></Value>
+      <CrossContract>false</CrossContract>
+    </MatchField>
+    <MatchField>
+      <Path>EmployeeContract/ReqEmployeeContractInfo/endDate</Path>
+      <RelOp>OperatorDef:/isThisQuarter/</RelOp>
+      <Value></Value>
+      <CrossContract>false</CrossContract>
+    </MatchField>
+    <ActionFormulas></ActionFormulas>
+    <EmailActions></EmailActions>
+    <ChartingInfo>
+      <ChartType>PieChart</ChartType>
+      <TopNResults>0</TopNResults>
+      <TopOrBottom>Top</TopOrBottom>
+      <X_Axis>BundleDef:/bundleType</X_Axis>
+      <Y1_Axis>Sum</Y1_Axis>
+      <Y2_Axis>Count</Y2_Axis>
+      <Legend>true</Legend>
+      <ToolTips>true</ToolTips>
+      <displayRanges>true</displayRanges>
+      <columnToChart>null</columnToChart>
+    </ChartingInfo>
+  </ReportTemplateParameters>
+</ReportTemplate>

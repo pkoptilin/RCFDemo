@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PackageDescriptor xmlns="http://selectica.com/internalmodel/PackageDescriptor">
+    <name>${project.name}</name>
+    <type>Custom</type>
+    <version>1.0</version>
+</PackageDescriptor>

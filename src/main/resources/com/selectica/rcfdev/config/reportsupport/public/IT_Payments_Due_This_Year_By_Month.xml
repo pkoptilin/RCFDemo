@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportTemplate>
+  <ReportTemplateName active="false">IT Payments Due This Year By Month</ReportTemplateName>
+  <ReportTemplateParameters>
+    <MetaInfo>
+      <PrimarySortingColumn ascending="true">ItContract/ReqPaymentGenerator/ReqPaymentStream/paymentDate</PrimarySortingColumn>
+      <GroupByColumn period="month" ascending="true">ItContract/ReqPaymentGenerator/ReqPaymentStream/paymentDate</GroupByColumn>
+      <ReportFilterType>AND</ReportFilterType>
+      <AgOpFilterType>AND</AgOpFilterType>
+      <ReportConditionType>Normal</ReportConditionType>
+    </MetaInfo>
+    <IncSummaryCalcs>true</IncSummaryCalcs>
+    <IncSummaryAvgs>false</IncSummaryAvgs>
+    <IncChart>true</IncChart>
+    <IncSummaryCount>false</IncSummaryCount>
+    <IncFilterCriteria>false</IncFilterCriteria>
+    <IncLineItemDetails>true</IncLineItemDetails>
+    <ResultFormat>html</ResultFormat>
+    <ReportType>0</ReportType>
+    <SelectedColumn>
+      <Label>Pay date</Label>
+      <Path>ItContract/ReqPaymentGenerator/ReqPaymentStream/paymentDate</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Payment amount</Label>
+      <Path>ItContract/ReqPaymentGenerator/ReqPaymentStream/paymentAmount</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Payment Description</Label>
+      <Path>ItContract/ReqPaymentGenerator/ReqPaymentStream/paymentDescription</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>IT Vendor</Label>
+      <Path>ItContract/ReqItHardwareInfo/counterParty</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label></Label>
+    </SelectedColumn>
+    <MatchField>
+      <Path>ItContract/ReqPaymentGenerator/ReqPaymentStream/paymentDate</Path>
+      <RelOp>OperatorDef:/isThisYear/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <MatchField>
+      <Path>BundleDef:/bundleType</Path>
+      <RelOp>OperatorDef:/contains/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value>IT</Value>
+    </MatchField>
+    <MatchField>
+      <Path></Path>
+      <RelOp></RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <ActionFormulas></ActionFormulas>
+    <EmailActions></EmailActions>
+    <ChartingInfo>
+      <ChartType>PieChart</ChartType>
+      <TopNResults>0</TopNResults>
+      <TopOrBottom>Top</TopOrBottom>
+      <X_Axis>ItContract/ReqPaymentGenerator/ReqPaymentStream/paymentDate</X_Axis>
+      <Y1_Axis>Sum</Y1_Axis>
+      <Y2_Axis>Count</Y2_Axis>
+      <Legend>true</Legend>
+      <ToolTips>true</ToolTips>
+      <displayRanges>true</displayRanges>
+      <columnToChart>ItContract/ReqPaymentGenerator/ReqPaymentStream/paymentAmount</columnToChart>
+    </ChartingInfo>
+  </ReportTemplateParameters>
+</ReportTemplate>
+

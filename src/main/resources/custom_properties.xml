@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <group name="Protected resources">
+        <property name="XMLPackageName" defaultValue="rcfdev" type="String" />
+    </group>
+</root>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportTemplate>
+  <ReportTemplateName active="false">IT Payment Terms Across Vendor By Department</ReportTemplateName>
+  <ReportTemplateParameters>
+    <MetaInfo>
+      <PrimarySortingColumn ascending="true">ItContract/ReqItHardwareInfo/counterParty</PrimarySortingColumn>
+      <GroupByColumn ascending="true">ItContract/ReqItHardwareInfo/department</GroupByColumn>
+      <ReportFilterType>AND</ReportFilterType>
+      <AgOpFilterType>AND</AgOpFilterType>
+      <ReportConditionType>Normal</ReportConditionType>
+    </MetaInfo>
+    <IncSummaryCalcs>true</IncSummaryCalcs>
+    <IncSummaryAvgs>false</IncSummaryAvgs>
+    <IncChart>true</IncChart>
+    <IncSummaryCount>false</IncSummaryCount>
+    <IncFilterCriteria>true</IncFilterCriteria>
+    <IncLineItemDetails>true</IncLineItemDetails>
+    <ResultFormat>html</ResultFormat>
+    <ReportType>0</ReportType>
+    <SelectedColumn>
+      <Label>Contract ID</Label>
+      <Path>ItContract/ReqItHardwareInfo/name</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>IT Vendor</Label>
+      <Path>ItContract/ReqItHardwareInfo/counterParty</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>IT Contract Type</Label>
+      <Path>ItContract/ReqItHardwareInfo/contractType</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Payment Terms</Label>
+      <Path>ItContract/ReqItHardwareInfo/paymentTerms</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Total Contract Amount</Label>
+      <Path>ItContract/ReqItHardwareInfo/totalContractAmount</Path>
+    </SelectedColumn>
+    <MatchField>
+      <Path>BundleDef:/bundleType</Path>
+      <RelOp>OperatorDef:/contains/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value>IT</Value>
+    </MatchField>
+    <MatchField>
+      <Path></Path>
+      <RelOp></RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <MatchField>
+      <Path></Path>
+      <RelOp></RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <ActionFormulas></ActionFormulas>
+    <EmailActions></EmailActions>
+    <ChartingInfo>
+      <ChartType>PieChart</ChartType>
+      <TopNResults>0</TopNResults>
+      <TopOrBottom>Top</TopOrBottom>
+      <X_Axis>ItContract/ReqItHardwareInfo/department</X_Axis>
+      <Y1_Axis>Sum</Y1_Axis>
+      <Y2_Axis>Count</Y2_Axis>
+      <Legend>true</Legend>
+      <ToolTips>true</ToolTips>
+      <displayRanges>true</displayRanges>
+      <columnToChart>ItContract/ReqItHardwareInfo/paymentTerms</columnToChart>
+    </ChartingInfo>
+  </ReportTemplateParameters>
+</ReportTemplate>
+

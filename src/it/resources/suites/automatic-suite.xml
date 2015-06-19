@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Solution Test Suite" verbose="10" parallel="false">
+    <test name="Automatic Tests" preserve-order="true" parallel="false">
+        <groups>
+            <dependencies>
+                <group name="eclm.clauses" depends-on="eclm.directories" />
+                <group name="eclm.templates" depends-on="eclm.clauses" />
+                <group name="eclm.contracts" depends-on="eclm.templates" />
+            </dependencies>
+        </groups>
+        <classes>
+            <class name="com.selectica.tests.automatic.DirectoriesAutoIT" />
+            <class name="com.selectica.tests.automatic.ClausesAutoIT" />
+            <class name="com.selectica.tests.automatic.TemplatesAutoIT" />
+            <class name="com.selectica.tests.automatic.ContractsAutoIT" />
+        </classes>
+    </test>
+</suite>

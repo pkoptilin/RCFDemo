@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportTemplate>
+  <ReportTemplateName active="true">Rule By Test TestovichPUBLIC</ReportTemplateName>
+  <ReportTemplateDescription></ReportTemplateDescription>
+  <ReportTemplateCategory>None</ReportTemplateCategory>
+  <ReportTemplateParameters>
+    <MetaInfo>
+      <ReportFilterType>OR</ReportFilterType>
+      <AgOpFilterType>OR</AgOpFilterType>
+      <ReportConditionType>Normal</ReportConditionType>
+    </MetaInfo>
+    <IncSummaryCalcs>false</IncSummaryCalcs>
+    <IncSummaryAvgs>false</IncSummaryAvgs>
+    <IncChart>false</IncChart>
+    <IncSummaryCount>false</IncSummaryCount>
+    <IncFilterCriteria>false</IncFilterCriteria>
+    <IncLineItemDetails>true</IncLineItemDetails>
+    <IncExport>1</IncExport>
+    <ResultFormat>html</ResultFormat>
+    <ReportType>1</ReportType>
+    <SelectedColumn>
+      <Label>Tracking #</Label>
+      <Path>BundleDef:/bundleTrackingNum</Path>
+    </SelectedColumn>
+    <SelectedColumn>
+      <Label>Name</Label>
+      <Path>BundleDef:/bundleName</Path>
+    </SelectedColumn>
+    <MatchField>
+      <Path>BundleDef:/bundleTrackingNum</Path>
+      <RelOp>OperatorDef:/notEquals/</RelOp>
+      <CrossContract>false</CrossContract>
+      <Value>0</Value>
+    </MatchField>
+    <MatchField>
+      <Path></Path>
+      <RelOp></RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <MatchField>
+      <Path></Path>
+      <RelOp></RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+    </MatchField>
+    <AggregateMatchField>
+      <Path></Path>
+      <RelOp></RelOp>
+      <CrossContract>false</CrossContract>
+      <Value></Value>
+      <AggregateOp></AggregateOp>
+    </AggregateMatchField>
+    <ActionFormulas></ActionFormulas>
+    <EmailActions></EmailActions>
+    <ChartingInfo></ChartingInfo>
+  </ReportTemplateParameters>
+</ReportTemplate>
